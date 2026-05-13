@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="site-title">Alfa Food Truck</title>
+    <link rel="stylesheet" href="styles.css?v=3.5">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="mode-cercania">
+    <div class="app-wrapper">
+        <main class="main-content">
+            <nav>
+                <div class="logo-container">
+                    <span class="logo-text" id="logo-display">Alfa Food Truck</span>
+                </div>
+            </nav>
+
+            <header class="carousel-hero" id="hero-section">
+                <!-- Los slides se inyectan por JS -->
+            </header>
+
+            <section class="menu-section" style="padding: 100px 8%; text-align: center; background: #fff; color: #1a1a1a;">
+                <h2 style="font-size: 3rem; font-weight: 900; margin-bottom: 50px; color: #000;">Nuestro Menú <span>Gourmet</span></h2>
+                <div class="menu-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+                    <div class="menu-item" style="padding: 30px; border: 1px solid #eee; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                        <h3 style="color: #ff8c00; font-size: 1.8rem; margin-bottom: 10px;">🌯 Burrito Alfa Pro</h3>
+                        <p style="color: #666; margin-bottom: 15px;">Rib Eye, costra de queso, aguacate fresco y nuestra salsa secreta ahumada.</p>
+                        <span style="font-weight: 900; font-size: 1.8rem; color: #000;">$180.00</span>
+                    </div>
+                    <div class="menu-item" style="padding: 30px; border: 1px solid #eee; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                        <h3 style="color: #ff8c00; font-size: 1.8rem; margin-bottom: 10px;">🍔 Hamburguesa Élite</h3>
+                        <p style="color: #666; margin-bottom: 15px;">Doble carne Angus premium, tocino glaseado, queso cheddar y pan brioche artesanal.</p>
+                        <span style="font-weight: 900; font-size: 1.8rem; color: #000;">$210.00</span>
+                    </div>
+                    <div class="menu-item" style="padding: 30px; border: 1px solid #eee; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                        <h3 style="color: #ff8c00; font-size: 1.8rem; margin-bottom: 10px;">🌮 Tacos de Autor</h3>
+                        <p style="color: #666; margin-bottom: 15px;">Set de 3 tacos de camarón al coco con aderezo cremoso de mango y chile habanero.</p>
+                        <span style="font-weight: 900; font-size: 1.8rem; color: #000;">$160.00</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="diagnostico-section">
+                <div class="diagnostico-container">
+                    <h2 class="diagnostico-title" id="diag-title-display">¿Hambre y poco tiempo?</h2>
+                    <div class="diagnostico-grid" id="diag-grid-display">
+                        <!-- Inyectado por JS -->
+                    </div>
+                    <div class="solucion-reveal" data-aos="zoom-in">
+                        <h3 id="sol-title-display">Pide con nuestro <span>Chef Alfa IA</span></h3>
+                        <p id="sol-desc-display">Nuestra IA toma tu pedido en segundos y te dice nuestra ubicación exacta.</p>
+                        <button class="btn-main" id="sol-btn-display" onclick="document.getElementById('chat-input').focus();">¡Ver Menú Completo y Pedir!</button>
+                    </div>
+                </div>
+            </section>
+
+            <footer style="background: #000; padding: 100px 50px; text-align: center;">
+                <span class="logo-text" id="footer-logo" style="color:#fff;">Alfa Food Truck</span>
+                <p style="color: #444; margin-top: 20px;">© 2026 Powered by Alfa IA Solutions.</p>
+            </footer>
+        </main>
+
+        <aside class="chat-sidebar" id="chat-sidebar">
+            <div class="chat-header">
+                <div style="display: flex; align-items: center; gap: 12px;">
+                    <div class="status-dot"></div>
+                    <h3 id="ai-name-display" style="font-size: 1.2rem;">Chef Alfa</h3>
+                </div>
+                <!-- BOTÓN DE CIERRE GIGANTE PARA MÓVIL -->
+                <button id="close-chat" class="mobile-only close-alfa-btn">✕</button>
+            </div>
+            <div class="chat-messages" id="chat-messages"></div>
+            <div class="chat-input-area">
+                <button id="mic-btn" class="icon-btn" style="background:transparent; border:1px solid var(--primary); color:var(--primary); margin-right:5px;">🎤</button>
+                <input type="text" id="chat-input" placeholder="Pregúntame lo que quieras...">
+                <button id="send-btn" class="icon-btn">➤</button>
+            </div>
+        </aside>
+
+        <!-- BURBUJA FLOTANTE MÓVIL -->
+        <button id="mobile-fab" class="mobile-fab">
+            <span>¡Chatea aquí!</span>
+            <div class="fab-icon">💬</div>
+        </button>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="script.js?v=3.6"></script>
+</body>
+</html>
