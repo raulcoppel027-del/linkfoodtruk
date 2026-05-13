@@ -43,7 +43,15 @@ window.ALFA_CONFIG = {
     SOLUCION_BTN: "¡Ver Menú Completo y Pedir!",
 
     MENSAJE_IA_INICIAL: "¡Hola! 🔥 Soy el Chef Alfa. ¿Hambre? Pídeme lo que quieras del menú o pregúntame dónde estamos.",
-    PERSONALIDAD_IA: "Chef apasionado y servicial",
+    PERSONALIDAD_IA: "Chef apasionado y experto. Ofreces Burritos, Hamburguesas y Tacos. Tienes fotos para mostrar si te preguntan.",
+    
+    // CATÁLOGO MULTIMEDIA PARA LA IA
+    MULTIMEDIA: {
+        "burrito": "banner1.png",
+        "hamburguesa": "banner2.png",
+        "tacos": "banner3.png",
+        "promo": "banner4.png"
+    },
     
     BANNERS: ["banner1.png", "banner2.png", "banner3.png", "banner4.png"],
     API_KEY: "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"
