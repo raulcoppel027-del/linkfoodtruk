@@ -11,7 +11,7 @@ window.ALFA_CONFIG = {
     // TEXTOS PERSONALIZADOS POR BANNER
     SLIDES: [
         {
-            TITULO: "¡Los Mejores <span>Burritos</span> de la Ciudad!",
+            TITULO: "¡Los Mejores <span>Burritos</span> de la Ciudad! 🌯🚀🔥",
             SUBTITULO: "Sabor real, ingredientes frescos y nuestra salsa secreta."
         },
         {
