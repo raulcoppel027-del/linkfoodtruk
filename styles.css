@@ -92,16 +92,34 @@ nav { padding: 30px 5%; position: absolute; width: 100%; z-index: 100; display: 
 #chat-input { flex: 1; background: transparent; border: 1px solid var(--border); padding: 15px 20px; border-radius: 30px; color: inherit; outline: none; }
 .icon-btn { width: 50px; height: 50px; background: var(--primary); border: none; border-radius: 50%; cursor: pointer; margin-left: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; }
 
-.mobile-fab { display: none; }
-.mobile-only { display: none; }
+.mobile-fab { 
+    display: flex;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    align-items: center;
+    gap: 12px;
+    font-weight: 900;
+    box-shadow: 0 15px 40px rgba(255, 140, 0, 0.5);
+    z-index: 1000;
+    animation: pulse-alfa 2s infinite;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 2px solid white;
+}
 
 @media (max-width: 1000px) {
     nav { padding: 20px 5%; }
     .logo-text { font-size: 1.8rem; }
     
-    .carousel-hero { height: 70vh; }
-    .slide-content h1 { font-size: 2.2rem; }
-    .slide-content p { font-size: 1rem; }
+    .carousel-hero { height: 75vh; }
+    .slide-content h1 { font-size: 2.5rem; text-align: center; }
+    .slide-content p { font-size: 1.1rem; text-align: center; }
     
     .diagnostico-section { padding: 60px 20px; }
     .diagnostico-grid { grid-template-columns: 1fr; gap: 20px; }
@@ -129,21 +147,9 @@ nav { padding: 30px 5%; position: absolute; width: 100%; z-index: 100; display: 
     .mobile-only { display: block; }
 
     .mobile-fab {
-        display: flex;
-        position: fixed;
         bottom: 25px;
         right: 20px;
-        background: var(--primary);
-        color: white;
-        border: none;
         padding: 12px 25px;
-        border-radius: 50px;
-        align-items: center;
-        gap: 10px;
-        font-weight: 800;
-        box-shadow: 0 10px 40px rgba(255, 140, 0, 0.4);
-        z-index: 1000;
-        animation: pulse-alfa 2s infinite;
         font-size: 0.9rem;
     }
 }
